@@ -83,7 +83,7 @@ def regresar():
     global selecar
     selecar.destroy()
     main()
-
+#leer archivo
 def leerarchivo(contenido):
     global cursos
     contenido1=contenido.split('\n')
@@ -105,7 +105,7 @@ def verificarcurso(codigo):
 
 
 
-    
+#función para cargar un archivo
 def Carga():
     root = tk.Tk()
     root.withdraw()
@@ -149,7 +149,7 @@ def selectar():
 
 listarc=None
 
-
+#función para agregar un curso
 def agregar_curso(codigo, nombre, prerrequisitos, semestre, opcionalidad, creditos, estado):
     global cursos
     if codigo != "" and nombre!= "" and semestre!="" and opcionalidad!="" and creditos!="" and estado!="":
@@ -414,7 +414,7 @@ def mostrarcurso():
 
     moscurso.mainloop()
 
-
+#función para mostrar cursos
 def mostrar_curso(codigo, nombre, prerrequisitos, semestre, opcionalidad, creditos, estado):
     global cursos
     if codigo != "":
